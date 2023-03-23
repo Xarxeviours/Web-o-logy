@@ -1,69 +1,86 @@
-<!DOCTYPE html>
-<html lang="en">
+*{
+    margin:10;
+    padding: 10;
+    box-sizing: border-box;
+}
+h1,p{
+    text-align: center;
+    font-size: 90px;
+    font-weight: bolder;
+}
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>"Certify" certificate maker</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    float:inline-end;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
 
-<body>
-    <header>
-        <nav>
-            <ul>
-                <button class="button" id="home">
-                    <li><a href="#"></a>Home</li>
-                </button>
-                <button class="button" id="temp">
-                    <li><a href="#"></a>Templates</li>
-                </button>
-                <button class="button" id="about">
-                    <li><a href="#"></a>About</li>
-                </button>
-                <button class="button" id="contact">
-                    <li><a href="#"></a>Contact</li>
-                </button>
-                <button class="button" id="login">
-                    <li><a href="#"></a>Login/Signup</li>
-                </button>
-            </ul>
-        </nav>
-    </header>
-    <br>
-    <br>
-    <h1>Certify</h1>
-    <p>Create your free <span class="cert">certificate</span>....</p>
-    <br>
-    <div class="bttn_wrapper">
-        <button class="center_bttn">Create Now in Few Minutes</button>
-    </div>
-    <br>
-    <br>
-    <form action="" class="container">
-        <h2 class="heading">Participant Information</h1>
-        <p class="req">Required fields are followed by *</p>
-        <p class="name">Name: <input type="text" name="name" required>* </p>
-        <p class="type">Choose your Certificate Type: 
-            <select name="card" id="card" required>*
-                <option value="">--Select a Certificate Type--</option>
-                <option value="prof">Professional</option>
-                <option value="custom">Custom</option>
-            </select>
-        </p>
-        <p class="event">Do you want your event logo?
-            <select name="opt" id="opt">
-                <option value="">--Select--</option>
-                <option value="yes">Yes</option>
-                <option value="no">No</option>
-            </select>
-        </p>
-        <p class="templates">
-            <a href="#">Show me relatable Templates </a> 
-        </p>
-        
-</form>
-</body>
+.bttn_wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-</html>
+}
+.center_bttn{
+    padding: 40px 50px;
+    font-size: large;
+    font-weight: 900;
+    border-radius: 8px;
+    background-color: rgb(242, 234, 6);
+
+
+}
+.center_bttn:hover{
+    color:rgb(0, 0, 0);
+    background-color: orange;
+    border-style: inherit;
+}
+.cert{
+    color:darkorchid;
+}
+.button{
+    width: 115px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 19px;
+    border: none;
+    background-color:rgb(255, 255, 255);
+    border-radius: 5px;
+
+}
+#login:hover{
+    color: rgb(0, 34, 255);
+    text-decoration: underline;
+
+}
+#contact:hover{
+    color: rgb(0, 47, 255);
+     text-decoration: underline;
+}
+#about:hover{
+    color: rgb(0, 42, 255);
+    text-decoration: underline;
+}
+#temp:hover{
+    color: rgb(0, 47, 255);
+    text-decoration: underline;
+}
+#home:hover{
+    color: rgb(0, 8, 255);
+    text-decoration: underline;
+}
+.name,.type,.req,.event,.templates{
+    font-size: 20px;
+    text-align: left;
+
+}
+.container{
+    background-color: rgb(255, 255, 255);
+    padding:5px 20px 15px 20px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+}
