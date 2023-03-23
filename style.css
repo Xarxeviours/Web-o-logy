@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"Certify" certificate maker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <button class="button" id="home">
+                    <li><a href="#"></a>Home</li>
+                </button>
+                <button class="button" id="temp">
+                    <li><a href="#"></a>Templates</li>
+                </button>
+                <button class="button" id="about">
+                    <li><a href="#"></a>About</li>
+                </button>
+                <button class="button" id="contact">
+                    <li><a href="#"></a>Contact</li>
+                </button>
+                <button class="button" id="login">
+                    <li><a href="#"></a>Login/Signup</li>
+                </button>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <br>
+    <h1>Certify</h1>
+    <p>Create your free <span class="cert">certificate</span>....</p>
+    <br>
+    <div class="bttn_wrapper">
+        <button class="center_bttn">Create Now in Few Minutes</button>
+    </div>
+    <br>
+    <br>
+    <form action="" class="container">
+        <h2 class="heading">Participant Information</h1>
+        <p class="req">Required fields are followed by *</p>
+        <p class="name">Name: <input type="text" name="name" required>* </p>
+        <p class="type">Choose your Certificate Type: 
+            <select name="card" id="card" required>*
+                <option value="">--Select a Certificate Type--</option>
+                <option value="prof">Professional</option>
+                <option value="custom">Custom</option>
+            </select>
+        </p>
+        <p class="event">Do you want your event logo?
+            <select name="opt" id="opt">
+                <option value="">--Select--</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+        </p>
+        <p class="templates">
+            <a href="#">Show me relatable Templates </a> 
+        </p>
+        
+</form>
+</body>
+
+</html>
